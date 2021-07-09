@@ -1,0 +1,3 @@
+$ cat .gitattributes
+*.module linguist-language=PHP
+* text=auto

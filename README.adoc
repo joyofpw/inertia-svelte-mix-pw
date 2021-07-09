@@ -1,0 +1,56 @@
+# Example Inertia + ProcessWire + Svelte + Laravel Mix
+
+This is a sample project that implements:
+
+- https://processwire.com/[ProcessWire]
+- https://inertiajs.com/[InertiaJS]
+- https://svelte.dev/[Svelte]
+- https://laravel-mix.com/[Laravel Mix]
+- https://github.com/joyofpw/inertia[ProcessWire's Inertia Adapter Module]
+
+## Makefile
+
+```make
+# Installs the node_modules. Requires npm >=12
+i install:
+	npm install
+
+# Compiles the resources/js files into public/js files
+m mix:
+	npm run dev
+
+# Compiles the resources/js files into public/js files
+# on every change
+w watch:
+	npm run watch
+
+# Backups database
+b backup:
+	php site/tools/database-backup.php
+```
+
+## webpack.mix.js
+
+The _webpack.mix.js_ was modified in order to generate a _site/templates/_mix.php_ file
+that will contain the values of _mix-manifest.json_.
+
+Modify _processwire.mix.js_ to your needs.
+
+## ProcessWire Installation
+
+- Copy the files to your webserver.
+- Ensure that `.htaccess` file exists at root level (index.php).
+- Install database with sql file found at `site/assets/backups/database/pw_inertia.sql`
+- Configure `site/config.php`.
+
+## Administration Panel
+
+- Admin URL: `/admin`
+- Admin User: `admin`
+- Admin Password: `adminpw`
+
+## Credits
+
+++++
+Made with <i class="fa fa-heart">&#9829;</i> by <a href="https://ninjas.cl" target="_blank">Ninjas.cl</a>.
+++++

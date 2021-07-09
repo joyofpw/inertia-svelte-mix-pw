@@ -1,0 +1,1 @@
+2021-07-08 19:15:42	admin	http://localhost:8888/pw-inertia/admin/login/	Successful login for 'admin'

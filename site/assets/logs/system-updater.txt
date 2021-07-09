@@ -1,0 +1,38 @@
+2021-07-08 19:15:02	Update #8: Completed!
+2021-07-08 19:15:02	Update #9: Initializing update
+2021-07-08 19:15:03	Update #9: Added: Pages > Recent
+2021-07-08 19:15:03	Update #9: Completed!
+2021-07-08 19:15:20	Update #10: Initializing update
+2021-07-08 19:15:22	Update #10: Installed ProcessLogger and added: Setup > Logs
+2021-07-08 19:15:22	Update #10: Installed InputfieldIcon
+2021-07-08 19:15:22	Update #10: Completed!
+2021-07-08 19:15:28	Update #11: Initializing update
+2021-07-08 19:15:28	Update #11: Completed!
+2021-07-08 19:15:36	Update #12: Initializing update
+2021-07-08 19:15:36	Update #12: Added 'published' column to pages table
+2021-07-08 19:15:36	Update #12: Populated values to 'published' for 43 pages
+2021-07-08 19:15:36	Update #12: Completed!
+2021-07-08 19:15:36	Update #13: Initializing update
+2021-07-08 19:15:37	Update #13: Initializing update
+2021-07-08 19:15:37	Update #13: Completed!
+2021-07-08 19:15:41	Update #14: Initializing update
+2021-07-08 19:15:41	Update #14: Completed!
+2021-07-08 19:15:42	Update #17: Created: /pw-inertia/site/assets/.htaccess
+2021-07-08 19:15:42	Update #17: Created: /pw-inertia/site/templates/.htaccess
+2021-07-08 19:15:42	Update #17: Created: /pw-inertia/site/modules/.htaccess
+2021-07-08 19:15:42	Update #15: Initializing update
+2021-07-08 19:15:42	Update #15: Completed!
+2021-07-08 19:15:42	Update #16: Initializing update
+2021-07-08 19:15:43	Update #16: Completed!
+2021-07-08 19:15:43	Update #17: Initializing update
+2021-07-08 19:15:43	Update #17: Skipped: /pw-inertia/site/.htaccess (already exists)
+2021-07-08 19:15:43	Update #17: Skipped: /pw-inertia/site/assets/.htaccess (already exists)
+2021-07-08 19:15:43	Update #17: Skipped: /pw-inertia/site/assets/cache/.htaccess (already exists)
+2021-07-08 19:15:43	Update #17: Skipped: /pw-inertia/site/assets/backups/.htaccess (already exists)
+2021-07-08 19:15:43	Update #17: Skipped: /pw-inertia/site/assets/logs/.htaccess (already exists)
+2021-07-08 19:15:43	Update #17: Skipped: /pw-inertia/site/templates/.htaccess (already exists)
+2021-07-08 19:15:43	Update #17: Skipped: /pw-inertia/site/modules/.htaccess (already exists)
+2021-07-08 19:15:43	Update #17: Details: <a href='https://processwire.com/blog/posts/pw-3.0.135/' target='_blank'>https://processwire.com/blog/posts/pw-3.0.135/</a>
+2021-07-08 19:15:43	Update #17: Completed!
+2021-07-08 19:15:44	Update #18: Initializing update
+2021-07-08 19:15:44	Update #18: Completed!
