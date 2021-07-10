@@ -5,8 +5,17 @@
 
 <script>
     import {inertia, page} from '@inertiajs/inertia-svelte';
-    
-    const { routes, hello, title:header } = $page.props;
+
+    const { routes, hello, title:pageTitle, flash } = $page.props;
+
+    let message = null;
+    if (flash) {
+        if (flash.messages) {
+            if (flash.messages[0]) {
+                message = flash.messages[0];
+            }
+        }
+    }
 
     $title = "My Index"
 
@@ -14,7 +23,7 @@
 
 </script>
 
-<h1>{header}</h1>
+<h1>{pageTitle}</h1>
 <ul>
     <li>Around the {hello}</li>
 </ul>
@@ -22,3 +31,10 @@
 use:inertia
 href={routes.hello.uri}
 >Click Here for Hello!</a>
+
+
+{#if message}
+    <p>
+        {message.text}
+    </p>
+{/if}

@@ -1,2 +1,0 @@
-2021-07-08 19:53:34	admin	http://localhost:8888/pw-inertia/	Filename doesn't exist: /Applications/MAMP/htdocs/pw-inertia/site/templates/app.view (in /wire/core/TemplateFile.php line 168)
-2021-07-08 20:04:22	admin	http://localhost:8888/pw-inertia/	Method Inertia::setVersion does not exist or is not callable in this context (in /wire/core/Wire.php line 544)
