@@ -1,6 +1,5 @@
 <?php
 
-if (!isset($disableInertia)) {
+if ($render) {
     echo $inertia->render($component, $properties);
-    $session->removeNotices();
 }

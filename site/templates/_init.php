@@ -21,9 +21,17 @@ $routes = [
         "redirect" => [
             "uri" => $pages->get("/redirect")->url,
             "method" => ["GET"]
+        ],
+        "validation" => [
+            "uri" => $pages->get("/validation")->url,
+            "method" => ["POST"]
         ]
     ]
 ];
 
 $inertia->setVersion(mixVersion())
+        ->setView("inertia/app.view.php")
         ->share($routes);
+
+// flag for default inertia rendering
+$render = true;
