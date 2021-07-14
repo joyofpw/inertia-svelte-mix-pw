@@ -6,7 +6,7 @@ const fs = require('fs');
 // <script src='<?php echo mix("/js/app.js") ?>' defer></script>
 // in your templates
 
-const template = `<?php // automatically generated at {{timestamp}} by: npm run dev 
+const template = `<?php // automatically generated at {{timestamp}} by: npm run dev
 
 class LaravelMixAssets {
     const version = '{{timestamp}}';
@@ -26,7 +26,7 @@ function mixVersion() {
 module.exports = async (filename = null) => {
 
     if (!filename) {
-        filename = "site/templates/_mix.php";
+        filename = `site${path.sep}templates${path.sep}_mix.php`;
     }
 
     filename = path.resolve(__dirname, filename)
@@ -34,10 +34,10 @@ module.exports = async (filename = null) => {
     const manifest = require(
         path.resolve(
             __dirname,
-            "public/mix-manifest.json"
+            `public${path.sep}mix-manifest.json`
         )
     );
-  
+
     let items = ''
     const keys = Object.keys(manifest);
     keys.forEach(key => {

@@ -3,7 +3,7 @@ const cssNesting = require('postcss-nesting');
 const mix = require('laravel-mix');
 const path = require('path');
 const fs = require('fs-extra');
-const processwireMix = require('./processwire.mix');
+const processwireMix = require(`.${path.sep}processwire.mix`);
 
 /*
  |--------------------------------------------------------------------------
@@ -23,14 +23,14 @@ const rootUrl = 'pw-inertia';
 const public = 'public';
 const resources = cwd('resources');
 
-const chunks = `${rootUrl}/${public}`;
-const chunksDir = cwd(`${public}/${chunks}/js`);
-const chunksDirReal = cwd(`${public}/js`);
+const chunks = `${rootUrl}${path.sep}${public}`;
+const chunksDir = cwd(`${public}${path.sep}${chunks}${path.sep}js`);
+const chunksDirReal = cwd(`${public}${path.sep}js`);
 
 mix.setPublicPath(public)
   .setResourceRoot(resources)
-  .js(`resources/js/app.js`, 'js')
-  .postCss(`resources/css/app.css`, 'css')
+  .js(`resources${path.sep}js${path.sep}app.js`, 'js')
+  .postCss(`resources${path.sep}css${path.sep}app.css`, 'css')
   .options({
     postCss: [
       cssImport(),
@@ -38,12 +38,12 @@ mix.setPublicPath(public)
     ],
   })
   .webpackConfig({
-    output: { chunkFilename: `${chunks}/js/[name].js?id=[chunkhash]` },
+    output: { chunkFilename: `${chunks}${path.sep}js${path.sep}[name].js?id=[chunkhash]` },
     resolve: {
       extensions: ['.js', '.svelte'],
       mainFields: ['svelte', 'browser', 'module', 'main'],
       alias: {
-        '@': path.resolve('resources/js'),
+        '@': path.resolve(`resources${path.sep}js`),
       },
     },
     module: {
@@ -67,7 +67,7 @@ mix.setPublicPath(public)
     // Chunks need a special path to be referenced inside the views
     // So we have to copy them the proper location
     fs.copySync(chunksDir, chunksDirReal);
-    fs.rmdirSync(cwd(`${public}/${rootUrl}`), {recursive: true});
+    fs.rmdirSync(cwd(`${public}${path.sep}${rootUrl}`), {recursive: true});
     // Generate the special _mix.php file
     processwireMix();
   });
