@@ -49,6 +49,11 @@ Modify _processwire.mix.js_ to your needs.
 - Admin User: `admin`
 - Admin Password: `adminpw`
 
+## Useful links
+
+- https://github.com/mrjgreen/phroute
+- https://mauricius.dev/manage-content-in-a-processwire-website-using-telegram/
+
 ## Credits
 
 ++++
